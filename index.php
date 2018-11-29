@@ -1,7 +1,7 @@
 <?php
 
 require_once('honeypot.php');
-require_once("Filter.php");
+require_once('Filter.php);
 
 $honeypot = new HoneyPot();
 
