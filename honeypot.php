@@ -74,6 +74,11 @@ class HoneyPot
                 </body>';
         echo $html;
     }
+    
+    public function redirect($url) 
+    {
+        header("Location: {$url}");
+    }
 
 }
 
