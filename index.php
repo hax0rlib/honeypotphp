@@ -5,7 +5,7 @@ require_once("Filter.php");
 
 $honeypot = new HoneyPot();
 
-$ipAdress = $honeypot->this->ip;
+$ipAdress = $honeypot->ip;
 
 $options = array(
     'ipv4' => true,
@@ -14,14 +14,10 @@ $options = array(
     'reserved' => true,
 );
 
-if(var_dump(Filter::IPValidate($ipAdress,$options)) == TRUE)
+if(Filter::IPValidate($ipAdress,$options)))
 {
     $honeypot->writeFile();
     $honeypot->printPage();
 } else {
     print "Noob com VPN";
 }
-
-
-
- ?>
